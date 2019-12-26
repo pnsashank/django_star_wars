@@ -1,9 +1,10 @@
 #star_Wars
 List of commands to run:
-`pip3 install -r requirements.txt`
-`python3 manage.py makemigrations`
-`python3 manage.py migrate`
-`python3 manage.py runserver`
+```
+pip3 install -r requirements.txt
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver```
 
 'Planets' app of star_Wars project, fetches data from "swapi"(Star Wars API), based on the planet_name given by the end user via a form
 
@@ -17,7 +18,7 @@ The application initially checks, whether the data is in the local store. If so 
 
 If the planet_name is not present in the local store, an API call is made to swapi. The JSON data from swapi API is parsed to extract the details if the planet present in the 'results' key of the JSON. If a wrong planet name is typed in, the swapi API return the 'results' key with planet names in its database, via string matching.
 
-Additional Feature added:
+######Additional Feature added:
 
 If the planet_name is not present in swapi JSON result, then it is assumed that the user has typed in the wrong planet name. Here, approximate string matching of the planet_name is done with the use of fuzzywuzzy library, using the token_sort_ratio() method, with the exisiting planet names in the local store.
 
@@ -25,7 +26,7 @@ token_sort_ratio() method works by taking into account, similar strings that are
 
 The use of approximate string matching brings in an additional feature, which acts as a check over the submitted data, allowing the end-user to have a seamless experience.
 
-Other Additional Features that can be added:
+######Other Additional Features that can be added:
 
 It is assumed that the data in swapi is static. If the data changes over time, instead of publishing exisiting data in the local store, an API call is made to check for updated values and the local store attributes are updated accordingly along with the updated planet details being published.
 
