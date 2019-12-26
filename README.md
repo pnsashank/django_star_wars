@@ -31,6 +31,10 @@ The use of approximate string matching brings in an additional feature, which ac
 ## Suggestion:
 Whike making the very first search, type in the right planet name, and store it in the local store, to take the advantage of approximate string search for next subsequently mispelled planet names.
 
+Example:
+1. Search for `Alderaan` (Shows results with exact match)
+2. Search for `Alderan`  (Shows results with fuzzy match) 
+
 
 ## Other Additional Features that can be added:
 
