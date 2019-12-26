@@ -1,5 +1,4 @@
-#star_Wars
-List of commands to run:
+## List of commands to run:
 ```
 pip3 install -r requirements.txt
 python3 manage.py makemigrations
