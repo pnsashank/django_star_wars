@@ -4,7 +4,9 @@ List of commands to run:
 pip3 install -r requirements.txt
 python3 manage.py makemigrations
 python3 manage.py migrate
-python3 manage.py runserver```
+python3 manage.py runserver
+
+```
 
 'Planets' app of star_Wars project, fetches data from "swapi"(Star Wars API), based on the planet_name given by the end user via a form
 
