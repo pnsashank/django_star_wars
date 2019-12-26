@@ -27,6 +27,11 @@ token_sort_ratio() method works by taking into account, similar strings that are
 
 The use of approximate string matching brings in an additional feature, which acts as a check over the submitted data, allowing the end-user to have a seamless experience.
 
+
+## Suggestion:
+Whike making the very first search, type in the right planet name, and store it in the local store, to take the advantage of approximate string search for next subsequently mispelled planet names.
+
+
 ## Other Additional Features that can be added:
 
 It is assumed that the data in swapi is static. If the data changes over time, instead of publishing exisiting data in the local store, an API call is made to check for updated values and the local store attributes are updated accordingly along with the updated planet details being published.
