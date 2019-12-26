@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>All planets</title>
+</head>
+<body>
+
+
+
+<h1>List of planets with details</h1>
+<table border="1" width="600">
+<tr>
+<td>Planet Name</td>                      <!-- Column names for the tables -->
+<td>Rotational Period</td>
+<td>Orbital Period</td>
+<td>Gravity</td>
+<td>Movies</td>
+<td>Image</td>
+</tr>
+
+{% for planet in all_planets %}
+<tr>
+<td>{{ planet.planet_name }}</td>        <!-- Runs through the planet information given in planet_details_dict -->
+<td>{{ planet.rotation_period }}</td>
+<td>{{ planet.orbital_period }}</td>
+<td>{{ planet.gravity }}</td>
+<td>{{ planet.films }}</td>
+<td>
+  <picture>
+    <image src ='https://image.cnbcfm.com/api/v1/image/106256503-1574274174070yoda.jpg?v=1574274186&w=360&h=200' type="image/png">
+  </picture>                             <!-- Default image if it image field is not present -->
+</td>
+</tr>
+{% endfor %}
+</table>
+
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script><script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'p3plcpnl0769'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>

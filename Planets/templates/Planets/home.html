@@ -1,0 +1,10 @@
+<!-- takes the planet name from user -->
+<form method="post" novalidate>
+  {% csrf_token %}      <!-- prevets cross site request forgeries -->
+  {{ form }}
+  <button type="submit">Submit</button>
+</form>
+<!-- When clicked renders the local store database of added planets with details -->
+<form action="local_store/" method="get">
+  <button type="Check the local store">Local store</button>
+</form>

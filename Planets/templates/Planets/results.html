@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Results</title>
+  </head>
+  <body>
+    <p>
+      <br/>The planet name is: <strong>{{ name }}</strong>
+                                  <!-- accepts data from the planet_details_dict -->
+      <br>The rotation period is: <strong>{{ rotation_period }}</strong>
+      <br/>The rotation orbital is: <strong>{{ orbital_period }}</strong>
+      <br/>The gravity is: <strong>{{ gravity }}</strong>
+      <br/>The result type is: <strong>{{ Result }}</strong>
+      <form action='database_addition/' method="post">
+        <input type="hidden" name="gravity" value="{{gravity}}"/>
+        <input type="hidden" name="films"   value="{{films}}"/>
+        <input type="hidden" name="name"    value="{{name}}"/>
+        <input type="hidden" name="rotation_period" value="{{rotation_period}}"/>
+        <input type="hidden" name="orbital_period" value="{{orbital_period}}"/>
+
+        {% csrf_token %}
+        <button type="add">Add</button>   <!-- When clicked adds the results to database.If added shows the -->
+      </form>
+    </p>
+  </body>
+</html>
